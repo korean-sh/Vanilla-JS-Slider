@@ -1,0 +1,48 @@
+/*slider item*/
+
+img {
+    width: 400px; height:200px;
+}
+
+.slider{width: 400px; height:200px; position: relative; margin-bottom: 10px;}
+.slider__01{ position: absolute; }
+.slider__02{ position: absolute; }
+.slider__03{ position: absolute; }
+.slider__04{ position: absolute; }
+.slider__05{ position: absolute; }
+.slider__bg{ position: absolute; width: 400px; height:200px; background-color: black; z-index: 0; }
+
+/*btn*/
+.btn__div{text-align:center; width: 400px;}
+
+/*function*/
+.showing{ z-index: 1; animation: fadeIn 0.5s linear; }
+
+/*circle*/
+.circles{width: 400px; position: relative; margin-bottom: 50px;}
+
+.circle{
+  position: absolute;
+  width: 10px; 
+  height: 10px; 
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.circle__01{ left:10%; }
+.circle__02{ left:30%; }
+.circle__03{ left:50%; }
+.circle__04{ left:70%; }
+.circle__05{ left:90%; }
+
+.showing__circle{width:13px; height:13px;}
+
+/*animation*/
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
